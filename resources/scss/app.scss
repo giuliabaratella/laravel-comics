@@ -26,52 +26,99 @@ img {
     display: block;
 }
 
-
-    main{
-        color: $color-light;
-        background-color: $color-dark;
-        #current-series{
-            .card-comics{
-                width: 200px;
-                .img-box{
-                    width: 200px;
-                    height: 200px;
-                    overflow: hidden;
-                    transition: all 0.1s;
-                    cursor: pointer;
-                }
-                &:hover{
-                    transform: scale(0.99);
-                }
+header{
+    li {
+        @include condensed;
+        font-size: 0.8em;
+        a{
+            color: $color-dark;
+            &:hover{
+                color: $color-primary;
             }
+        }
     }
-        .container{
-            position: relative;
-            .label{
-            padding: 8px 25px;
-            background-color: $color-primary;
-            position: absolute;
-            top:-25px;
-            left: 0;
+}
+
+main{
+    color: $color-light;
+    background-color: $color-dark;
+    #current-series{
+        .card-comics{
+            width: 200px;
+            .img-box{
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                transition: all 0.1s;
+                cursor: pointer;
+            }
+            &:hover{
+                transform: scale(0.99);
+            }
+        }
+        }
+    .container{
+        position: relative;
+        .label{
+        padding: 8px 25px;
+        background-color: $color-primary;
+        position: absolute;
+        top:-25px;
+        left: 0;
+        @include condensed;
+        font-size: 1em;
+    }
+    }
+
+
+    #jumbo{
+        height: 400px;
+        // overflow: hidden;
+        background-image: url("../img/jumbotron.jpg");
+        background-size: cover;
+
+    }
+    .button {
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 8px 50px;
+        border-radius: 0;
+        @include condensed;
+        font-size:0.8em;
+    }
+}
+footer{
+    .footer-links{
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+        height: 350px;
+        color: $color-light;
+        #dc-logo-bg {
+            display: block;
+            object-fit: none;
+            overflow-x:visible;
+            z-index:500;
+        }
+        h4{
             @include condensed;
             font-size: 1em;
         }
-        }
-
-
-        #jumbo{
-            height: 400px;
-            // overflow: hidden;
-            background-image: url("../img/jumbotron.jpg");
-            background-size: cover;
-
-        }
-        .button {
-            background-color: $color-primary;
-            color: $color-light;
-            padding: 8px 50px;
-            border-radius: 0;
-            @include condensed;
-            font-size:0.8em;
+        a{
+            color: $color-icons;
+            font-weight: 500;
+            font-size: 0.8em;
+            z-index: 1000;
+            &:hover{
+                    color: $color-light;
+             }
         }
     }
+    .footer-social {
+        background-color: $color-bg-footer;
+        button {
+            color: $color-light;
+            border: 2px solid $color-primary;
+            border-radius: 0;
+        }
+    }
+}
