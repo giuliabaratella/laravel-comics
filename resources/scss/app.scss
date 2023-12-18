@@ -12,3 +12,13 @@ $fa-font-path: "../webfonts" !default;
 h1{
     color: $text-color;
 }
+#current-series{
+    .card-img-box{
+        // width: 200px;
+        // height: 200px;
+        img {
+            width: 100%;
+            // object-position: center;
+        }
+    }
+}
