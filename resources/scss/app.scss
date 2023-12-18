@@ -87,6 +87,22 @@ main{
         font-size:0.8em;
     }
 }
+#resources {
+    background-color: $color-primary;
+    #img-box {
+        width: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    a .box{
+        transition: all 0.2s;
+        &:hover {
+        transform: scale(0.97);
+    }
+    }
+
+}
 footer{
     .footer-links{
         background-image: url('../img/footer-bg.jpg');

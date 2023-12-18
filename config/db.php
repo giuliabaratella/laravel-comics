@@ -162,6 +162,28 @@ return [
         'img/footer-youtube.png',
         'img/footer-pinterest.png',
         'img/footer-periscope.png',
+    ],
+    'buyComics' => [
+        [
+            'img' => 'img/buy-comics-digital-comics.png',
+            'text' => 'Digital Comics'
+        ],
+        [
+            'img' => 'img/buy-comics-merchandise.png',
+            'text' => 'DC Merchandise'
+        ],
+        [
+            'img' => 'img/buy-comics-subscriptions.png',
+            'text' => 'Subscription'
+        ],
+        [
+            'img' => 'img/buy-comics-shop-locator.png',
+            'text' => 'Comic Shop Locator'
+        ],
+        [
+            'img' => 'img/buy-dc-power-visa.svg',
+            'text' => 'DC Power Visa'
+        ]
     ]
 ];
 
