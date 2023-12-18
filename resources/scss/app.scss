@@ -9,16 +9,69 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1{
-    color: $text-color;
+body {
+    font-family: $base-font;
 }
-#current-series{
-    .card-img-box{
-        // width: 200px;
-        // height: 200px;
-        img {
-            width: 100%;
-            // object-position: center;
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+
+    main{
+        color: $color-light;
+        background-color: $color-dark;
+        #current-series{
+            .card-comics{
+                width: 200px;
+                .img-box{
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                    transition: all 0.1s;
+                    cursor: pointer;
+                }
+                &:hover{
+                    transform: scale(0.99);
+                }
+            }
+    }
+        .container{
+            position: relative;
+            .label{
+            padding: 8px 25px;
+            background-color: $color-primary;
+            position: absolute;
+            top:-25px;
+            left: 0;
+            @include condensed;
+            font-size: 1em;
+        }
+        }
+
+
+        #jumbo{
+            height: 400px;
+            // overflow: hidden;
+            background-image: url("../img/jumbotron.jpg");
+            background-size: cover;
+
+        }
+        .button {
+            background-color: $color-primary;
+            color: $color-light;
+            padding: 8px 50px;
+            border-radius: 0;
+            @include condensed;
+            font-size:0.8em;
         }
     }
-}
