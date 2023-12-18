@@ -30,5 +30,6 @@
         </div>
 
     </main>
+    @include('partials.resources')
 
 @endsection

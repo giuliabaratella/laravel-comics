@@ -37,6 +37,17 @@ header{
             }
         }
     }
+    .search{
+        border-bottom: 3px solid $color-primary;
+        .searchbar{
+            border: 0 !important;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+    }
+
 }
 
 main{

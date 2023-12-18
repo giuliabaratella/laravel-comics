@@ -13,8 +13,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="d-flex column-gap-4 navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                    style="--bs-scroll-height: 100px;">
+                <ul class="d-flex column-gap-4 navbar-nav me-5 my-2 my-lg-0 navbar-nav-scroll">
                     @foreach ($navLinks as $link)
                         <li class="text-uppercase nav-item">
                             <a href="#" class="nav-link-active">{{ $link }}</a>
@@ -22,7 +21,13 @@
                     @endforeach
 
                 </ul>
+                <div class="search d-flex align-items-center ">
+                    <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
+
         </nav>
+
     </div>
 </header>
