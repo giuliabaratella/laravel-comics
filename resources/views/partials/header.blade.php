@@ -5,7 +5,10 @@
 <header>
     <div class="container d-flex justify-content-between align-items-center ">
         <div id="logo" class="my-3 pe-3">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Comics">
+            <a href="{{ route('home') }}">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Comics">
+            </a>
+
         </div>
         <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -16,7 +19,7 @@
                 <ul class="d-flex column-gap-4 navbar-nav me-5 my-2 my-lg-0 navbar-nav-scroll">
                     @foreach ($navLinks as $link)
                         <li class="text-uppercase nav-item">
-                            <a href="#" class="nav-link-active">{{ $link }}</a>
+                            <a href="{{ $link }}" class="nav-link-active">{{ $link }}</a>
                         </li>
                     @endforeach
 
