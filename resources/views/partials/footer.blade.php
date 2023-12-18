@@ -3,6 +3,7 @@
     $shop = config('db.shop');
     $dc = config('db.dc');
     $sites = config('db.sites');
+    $social = config('db.socialIcons');
 @endphp
 
 <footer>
@@ -48,6 +49,17 @@
     <div class="footer-social">
         <div class="container d-flex justify-content-between py-5">
             <button class="btn text-uppercase fw-bold">Sign-up now!</button>
+            <div class="d-flex column-gap-3 align-items-center">
+                <div class="text-uppercase fw-bold follow-us d-none d-md-block">Follow us</div>
+                <div class="d-flex column-gap-3 align-items-center ">
+                    @foreach ($social as $icon)
+                        <a href="#">
+                            <img src={{ $icon }} alt="social">
+                        </a>
+                    @endforeach
+
+                </div>
+            </div>
         </div>
     </div>
 </footer>

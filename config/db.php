@@ -156,5 +156,12 @@ return [
         'news',
         'shop'
     ],
+    'socialIcons' => [
+        'img/footer-fb.png',
+        'img/footer-twit.png',
+        'img/footer-youtube.png',
+        'img/footer-pinterest.png',
+        'img/footer-periscope.png',
+    ]
 ];
 

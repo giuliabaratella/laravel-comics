@@ -120,5 +120,16 @@ footer{
             border: 2px solid $color-primary;
             border-radius: 0;
         }
+        .follow-us{
+            color:$color-primary;
+            font-size: 1.1em;
+            @include condensed;
+
+
+        }
+        a img:hover{
+            opacity: 80%;
+        }
     }
+
 }
