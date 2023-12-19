@@ -99,7 +99,7 @@ main{
         }
 
     }
-    #comic-detail{
+    #comic-detail, #game-detail{
 
         .blueline{
             height: 70px;
@@ -109,6 +109,16 @@ main{
                 position: relative;
                 .comic-img{
                     width: 200px;
+                    position: absolute;
+                    bottom: -50px;
+                    left: 0;
+                    img {
+                        width: 100%;
+                        border: 2px solid $color-light;
+                    }
+                }
+                .game-img{
+                    width: 400px;
                     position: absolute;
                     bottom: -50px;
                     left: 0;

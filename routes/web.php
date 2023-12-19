@@ -51,6 +51,16 @@ Route::get('/games', function () {
     return view('games.index', compact('games'));
 });
 
+Route::get('/games/{id}', function ($id) {
+    $games = config('gamesdb.games');
+    if ($id >= 0 && $id < count($games)) {
+        $game = $games[$id];
+        return view('games.show', compact('game'));
+    } else {
+        abort(404);
+    }
+})->name('games.show');
+
 Route::get('/collectibles', function () {
 
     return view('collectibles');

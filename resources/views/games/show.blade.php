@@ -4,29 +4,29 @@
 
 @extends('layouts.app')
 
-@section('title', $comic['title'])
+@section('title', $game['name'])
 
 @section('content')
     <main>
         <div id="jumbo">
         </div>
-        <div id="comic-detail">
+        <div id="game-detail">
             <div class="blueline">
                 <div class="container">
-                    <div class="comic-img">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    <div class="game-img">
+                        <img src="{{ $game['img_icon_url'] }}" alt="{{ $game['name'] }}">
                     </div>
                 </div>
             </div>
             <div class="container py-5">
                 <div class="row mt-5">
                     <div class="col-12 col-lg-8 mb-3">
-                        <h1 class="text-uppercase mb-3">{{ $comic['title'] }}</h1>
+                        <h1 class="text-uppercase mb-3">{{ $game['name'] }}</h1>
                         <div class="price-info row align-items-center mb-3">
                             <div class="price-box col-8 d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
                                     <div class="text-green me-1">U:S:Price:</div>
-                                    <div>{{ $comic['price'] }}</div>
+                                    <div>59.99 $</div>
                                 </div>
                                 <div class="text-uppercase text-green">Available</div>
                             </div>
@@ -36,7 +36,15 @@
                             </div>
 
                         </div>
-                        <p>{{ $comic['description'] }}</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem iusto facere repellendus
+                            quis praesentium fuga commodi atque reprehenderit. Consectetur nostrum molestias odit dolores
+                            ducimus quasi inventore dolore alias, facere est itaque quidem, adipisci temporibus omnis.
+                            Explicabo nisi quibusdam qui quasi? Laudantium quod nesciunt esse quis sit, magni dolores?
+                            Cumque, natus! Temporibus corporis ea sequi voluptates illo vero praesentium error beatae
+                            reiciendis nisi laudantium optio quo id non architecto quisquam, enim consequuntur eligendi
+                            provident consequatur quis? Nulla, tempore perspiciatis iure voluptates numquam aut in
+                            distinctio eveniet odit enim fugit quos quis perferendis, aliquam similique optio corrupti
+                            exercitationem expedita.</p>
                     </div>
 
                     <div class="col-12 col-lg-4">
@@ -80,21 +88,21 @@
                             <div class="border-bottom row py-2">
                                 <div class="col-4">Series:</div>
                                 <div class="col-8 text-blue">
-                                    {{ $comic['series'] }}
+                                    Action
                                 </div>
 
                             </div>
                             <div class="border-bottom row py-2">
                                 <div class="col-4">U.S.Price:</div>
                                 <div class="col-8 ">
-                                    {{ $comic['price'] }}
+                                    59.99$
                                 </div>
 
                             </div>
                             <div class="border-bottom row py-2">
                                 <div class="col-4">On sale date:</div>
                                 <div class="col-8 ">
-                                    {{ $comic['sale_date'] }}
+                                    2023/04/01
                                 </div>
 
                             </div>

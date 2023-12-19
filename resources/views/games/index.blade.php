@@ -12,18 +12,18 @@
                 <div class="row row-gap-3">
                     @foreach ($games as $key => $game)
                         <div class="col-12 col-md-4 col-lg-3 col-xl-2">
-                            {{-- <a href="{{ route('comics.show', $key) }}"> --}}
-                            <div class="card-games">
+                            <a href="{{ route('games.show', $key) }}">
+                                <div class="card-games">
 
-                                <div class="img-box mb-2">
-                                    <img src="{{ $game['img_icon_url'] }}" alt="{{ $game['name'] }}">
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="text-uppercase mb-5">{{ $game['name'] }}</h6>
-                                </div>
+                                    <div class="img-box mb-2">
+                                        <img src="{{ $game['img_icon_url'] }}" alt="{{ $game['name'] }}">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-uppercase mb-5">{{ $game['name'] }}</h6>
+                                    </div>
 
-                            </div>
-                            {{-- </a> --}}
+                                </div>
+                            </a>
                         </div>
                     @endforeach
                     <div class="text-center">
