@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('db.comics');
-    return view('home', compact('comics'));
+    // $comics = config('db.comics');
+    // return view('home', compact('comics'));
+    return redirect('/comics');
 })->name('home');
 
 Route::get('/characters', function () {
@@ -24,8 +25,19 @@ Route::get('/characters', function () {
 });
 Route::get('/comics', function () {
     $comics = config('db.comics');
-    return view('home', compact('comics'));
+    return view('comics.index', compact('comics'));
 });
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('db.comics');
+    if ($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+})->name('comics.show');
+
 Route::get('/movies', function () {
 
     return view('movies');

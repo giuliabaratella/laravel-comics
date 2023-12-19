@@ -7,26 +7,9 @@
         <div id="jumbo">
         </div>
         <div class="container py-5">
-            <div class="label text-uppercase fw-bold">Current Series</div>
-            <section id="current-series" class="container">
-                <div class="row row-gap-3">
-                    @foreach ($comics as $comic)
-                        <div class="col-12 col-md-4 col-lg-3 col-xl-2 ">
-                            <div class="card-comics">
-                                <div class="img-box mb-3">
-                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="text-uppercase mb-5">{{ $comic['title'] }}</h6>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                    <div class="text-center">
-                        <button class="button btn text-uppercase fw-bold">Load More</button>
-                    </div>
-                </div>
-            </section>
+            <div class="label text-uppercase fw-bold">Home</div>
+            <div>Index content</div>
+
         </div>
 
     </main>
