@@ -126,7 +126,30 @@ main{
 
             }
         }
+        .specs{
+            font-weight: 600;
+            font-size: 0.8em;
+            background-color: $color-light-grey;
+            border-top: 1px solid $color-mid-grey;
+            padding-top: 30px;
+            .border-bottom{
+               border-bottom: 1px solid $color-mid-grey;
+            }
+            .text-blue{
+                color: $color-primary;
+            }
+            .buy{
+                color: $color-mid-grey;
+                .img-box{
+                    height: 50px;
+                    img{
+                        height: 100%;
+                        filter: invert(30%);
+                    }
+                }
+            }
 
+        }
     }
 
 

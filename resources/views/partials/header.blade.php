@@ -19,7 +19,7 @@
                 <ul class="d-flex column-gap-4 navbar-nav me-5 my-2 my-lg-0 navbar-nav-scroll">
                     @foreach ($navLinks as $link)
                         <li class="text-uppercase nav-item">
-                            <a href="{{ $link }}" class="nav-link-active">{{ $link }}</a>
+                            <a href="/{{ $link }}" class="nav-link-active">{{ $link }}</a>
                         </li>
                     @endforeach
 
