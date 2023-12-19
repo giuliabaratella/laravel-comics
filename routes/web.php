@@ -47,9 +47,10 @@ Route::get('/tv', function () {
     return view('tv');
 });
 Route::get('/games', function () {
-
-    return view('games');
+    $games = config('gamesdb.games');
+    return view('games.index', compact('games'));
 });
+
 Route::get('/collectibles', function () {
 
     return view('collectibles');
